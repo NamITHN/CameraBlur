@@ -45,7 +45,7 @@ public class PictureActivity extends AppCompatActivity implements View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picture);
-
+        getSupportActionBar().setTitle("Điều chỉnh độ xóa phông");
         imgView = this.findViewById(R.id.img_view);
         imageView = findViewById(R.id.img);
         sbBlur = findViewById(R.id.sb_blur);

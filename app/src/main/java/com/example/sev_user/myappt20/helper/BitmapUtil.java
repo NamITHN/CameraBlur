@@ -197,10 +197,10 @@ public class BitmapUtil {
     }
 
 
-    public static Bitmap rotation(Bitmap bitmap) {
+    public static Bitmap rotation(Bitmap bitmap,int degree) {
         Matrix matrix = new Matrix();
 
-        matrix.postRotate(-90);
+        matrix.postRotate(degree);
 
         Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmap, bitmap.getWidth(), bitmap.getHeight(), true);
 

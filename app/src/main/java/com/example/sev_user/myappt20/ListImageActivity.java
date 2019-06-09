@@ -25,6 +25,7 @@ public class ListImageActivity extends AppCompatActivity implements ImageBlurAda
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_image);
+        getSupportActionBar().setTitle("Danh sách ảnh xóa phông");
         rcList = this.findViewById(R.id.rl_image_blur);
         txtNoImage=this.findViewById(R.id.txt_no_image);
 
